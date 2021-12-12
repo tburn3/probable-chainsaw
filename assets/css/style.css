@@ -1,0 +1,128 @@
+:root {
+    --color1: darkslategrey;
+    --color2: darkslategrey;
+    --color3: black;
+}
+
+* (
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+)
+
+.section-title {
+    font-size: 48px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.primarytitle {
+    color: var(--color1);
+    border-right: 5px; solid: var(--color1);
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.secondarytitle {
+    color: var(--color2);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.sectionlayout {
+    display: flex;
+    flex-wrap: wrap;
+    background: var(--color3);
+    padding-top: 10px;
+    justify-content: left;
+}
+
+/* header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px; 
+    background-color: var(--color1);
+    color: var(--color2);
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 0;
+    text-shadow: 0 0 5px brown;
+}
+
+header nav {
+    margin: 7px 0;
+    width: 100%;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 32px;
+    text-shadow: 0 0 5px olive;
+}
+
+header nav {
+    margin: 7px 0;
+    width: 100%;
+}
+
+header nav ul li {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 25px;
+    text-shadow: 0 0 5px darkolivegreen
+}
+
+header nav ul li a:hover {
+    background: var(--color2);
+    color: var(--color1);
+    transition: 1s;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--color2);
+}
+
+/* hero style */
+
+.hero h1 {
+    font-size: 40px;
+    color: var(--color2);
+    position: relative;
+    right: 100px;
+    top: 80px;
+    text-shadow: 0 0 5px; rgba(300, 200, 200, .5);
+}
+
+/* Biography */
+
+.bio {
+    margin: 20px;
+    font-size: 18px;
+    text-align: left;
+    width: 40%;
+    line-height: 2;
+}
+
+/* Work section */
+
+.my-work {
+    background: var(--color3);
+}
