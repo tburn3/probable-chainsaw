@@ -1,3 +1,3 @@
 * Read me for Timothy Burns Portfilio *
 
-![](assets/images/Screen Shot 2021-12-19 at 13.43.46.png)
+![](assets/images/Screen%20Shot%202021-12-19%20at%2013.43.46.png)
