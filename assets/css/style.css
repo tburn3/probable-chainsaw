@@ -151,7 +151,7 @@ header a {
 .project-grid-layout {
     display: flex;
     width: 50%;
-    justify-content: center;
+    justify-content: right;
 }
 
 .projects-grid {
@@ -161,60 +161,9 @@ header a {
     width: 35vw;
     height: 30vw;
     margin: 15px auto;
-    gird-gap: 10px;
+    grid-area: 10px;
 }
 
-.box1 {
-    grid-row: 1 / 2;
-    grid-column: 1;
-}
-
-.box2 {
-    grid-row: 2 / 3;
-    grid-column: 1;
-}
-
-.box1 {
-    grid-row: 3 / 4;
-    grid-column: 1;
-}
-
-.box1 {
-    grid-column: 1/ span 4;
-    grid-row: 1/ span 3;
-    border-radius: 10px;
-    border: 3px solid var(--color1);
-    display: flex;
-    align-items: flex-end;
-    background-image: url(../images/IMG_0150.jpeg);
-    background-position: center;
-    background-size: cover;
-}
-
-.box1 a {
-    text-decoration: none;
-    padding: 100px;
-}
-
-.box1 p {
-    font-size: 15px;
-    color: var(--color2);
-    position: absolute;
-    border-radius: 5px;
-    margin: 0 20px;
-}
-
-.box2 {
-    grid-column: 1/ span 4;
-    grid-row: 4/ span 2;
-    border-radius: 10px;
-}
-
-.box3 {
-    grid-column: 5/ span 2;
-    grid-row: 1/ span 3;
-    border-radius: 10px;
-}
 
 .contactme {
     justify-content: center;
@@ -240,7 +189,7 @@ header a {
     background: var(--color2);
     color: var(--color1);
     border-radius: 10px;
-    transition: 0.5s;
+    transition: .1s;
 }
 
 footer {
@@ -257,7 +206,7 @@ footer a {
     padding: 20px;
 }
 
-@media screen and (min-width: 980px) {
+@media screen {
     header nav ul li a:hover {
         background: var(--color2);
         color: var(--color1);
@@ -267,30 +216,19 @@ footer a {
     }
 }
 
-@media screen and (min-width:980px) {
+@media screen {
     .contactme a:hover {
         background: var(--color1);
         color: var(--color2);
         border-radius: 10px;
-        transition: 0.5s;
+        transition: 1s;
     }   
 }
-
-/* media query for desktop */
-
-@media screen and (min-width: 980px) {
-    .box1:hover, .box2:hover, .box3:hover {
-        opacity: .5;
-        transition: 1s;
-        padding: 15px;
-    }
-}
-
 /* Media query for mobile phones & tablets */
-@media screen and (max-width: 768px) {
+@media screen {
     .picture {
-        height: 50vw;
-        width: 30%;
+        flex: auto;
+        width: 150px;
        }
 }
 
@@ -300,4 +238,8 @@ footer a {
         right: 120px;
         top: 120px;
     }    
+}
+
+.footer h3 {
+    text-align: center;
 }
